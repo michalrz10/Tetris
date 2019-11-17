@@ -185,25 +185,6 @@ class Display:
 				if event.type==pygame.QUIT:
 					sys.exit(0)
 				if event.type == pygame.KEYDOWN:
-					'''if event.key == pygame.K_w:	
-						show=not show
-						print('Show: '+str(show))
-					if event.key == pygame.K_SPACE:	
-						stop=not stop
-						print('Stop: '+str(stop))
-					if event.key == pygame.K_s:	
-						self.modelu.save()
-						print('Saved!')
-					if event.key == pygame.K_e:	
-						slow=not slow
-						print('Slow: '+str(slow))
-					if event.key == pygame.K_q:
-						plt.clf()
-						plt.subplot(2,1,1)
-						plt.plot(range(1,len(self.game.scoree)+1),self.game.scoree)
-						plt.subplot(2,1,2)
-						plt.plot(range(1,len(self.game.bounces)+1),self.game.bounces)
-						plt.pause(0.0001)'''
 					if event.key == pygame.K_RIGHT:
 						self.game.move(True)
 					if event.key == pygame.K_LEFT:
